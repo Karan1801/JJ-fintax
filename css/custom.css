@@ -1,0 +1,109 @@
+.background-line{
+    background: linear-gradient(360deg, #E6F4F7 0%, #FFFFFF 100%);
+}
+
+.bgsearch{
+    background-image: url('https://www.jjfintax.com/img/searchicon.png');
+    background-repeat: no-repeat;
+}
+
+.News-headline:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    border-left: 20px solid #0c5593;
+    border-top: 17px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+/* *{
+    font-family: ;
+} */
+
+nav {
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 8px 12px;
+}
+
+nav .mainer li a {
+    padding: 8px 0px;
+    font-size: 13px;
+}
+
+#icon {
+    padding: 5px 7px 3px 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#icon svg {
+    color: #0c5593;
+    height: 28px;
+    transition: all .3s ease;
+}
+
+#icon:hover svg {
+    color: #0075FF;
+}
+
+#checkbox,
+#icon {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        border-bottom: 1px solid #455468;
+    }
+
+    nav .oggy {
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        background-color: #0c5593;
+        left: 0;
+        color:white!important;
+        top: 71px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease;
+    }
+
+    nav .oggy li {
+        display: block;
+        padding: 10px 15px;
+        color:white!important;
+    }
+
+    nav .oggy li a {
+        display: block;
+        padding: 0px 0;
+        color:white!important;
+    }
+
+    .jack li a {
+        padding: 0px 0px !important
+    }
+
+    #icon {
+        display: block;
+    }
+
+    #checkbox:checked~ul {
+        max-height: 900px;
+        /* Adjust max height to show the menu */
+    }
+
+    #checkbox:checked~#icon #menuIcon {
+        d: path("M6 18L18 6M6 6l12 12");
+    }
+
+}
